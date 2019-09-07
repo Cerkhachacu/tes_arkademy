@@ -1,1 +1,2 @@
 # tes_arkademy
+Tugas dari RESTful API adalah sebagai penyedia data untuk aplikasi lainnya, agar data tersebut bisa di gunakan di berbagai aplikasi baik itu mobile maupun Web, untuk itu diperlukan sebuah format standar data yang dapat di gunakan ke berbagai bahasa pemrograman. JSON merupakan Format data yang dapat digunakan untuk pertukaran dan penyimpanan data. Jadi JSON merupakan format data yang digunakan di RESTful API sebagai standar bahasa pertukaran data.
