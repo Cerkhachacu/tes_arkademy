@@ -1,1 +1,12 @@
+def hitung_vokal(kata):
+    penghitung = 0
+    kata = kata.lower()
+    for huruf in kata:
+        if huruf == "a" or huruf == "e" or huruf == "i" or huruf == "o" or huruf == "u":
+            penghitung += 1
+        else:
+            penghitung = penghitung
+    print(penghitung)
 
+hitung_vokal("SAYa MAU MAKAN")
+hitung_vokal("HmmmMMmmMM...")
