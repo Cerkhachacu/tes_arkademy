@@ -1,0 +1,20 @@
+def cek_user_name(user_name):
+    import re
+    pattern = re.compile("[a-z]{5,9}")
+    a = pattern.match(user_name)
+
+    return bool(a)
+
+
+def cek_password(password):
+    import re
+    pattern = re.compile(".*(?=.{8,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W\S])")
+    result = pattern.match(password)
+
+    return bool(result)
+
+
+print("is_username_Valid(""cod3r"")\n", cek_user_name("cod3r"))
+print("is_username_Valid (""siska"")\n", cek_user_name("siska"))
+print("is_password_Valid (""p4s$gW"")\n", cek_password("p4s$gW"))
+print("is_password_Valid (""codeYourFuture!123"")\n", cek_password("codeYourFuture!123"))
