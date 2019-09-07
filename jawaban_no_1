@@ -1,0 +1,22 @@
+import json
+def bio():
+    name = "Yanral Apdy"
+    age = 25
+    address = "Bandarejo"
+    hobbies = ["Fustsal","Pes"]
+    is_married = False
+    list_school = ["sma n 1 pasaman", "2009", "2012", "null"]
+    skills = ["python", "beginner"]
+    interest_in_coding =  True
+
+    return json.dumps(
+        {'name': name,
+         'age': age,
+         'address': address,
+         'hobbies': hobbies,
+         'is_married': is_married,
+         'list_school': list_school,
+         'skills': skills,
+         'interest_in_coding': interest_in_coding})
+
+print(bio())
