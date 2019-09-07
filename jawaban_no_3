@@ -6,6 +6,8 @@ def segitiga(a):
             if k % 2 != 0 and k > 3:
                 y = a - x
                 x += 1
+            else:
+                y = a
 
         for i in range(y):
             for j in range(a+2):
@@ -18,4 +20,5 @@ def segitiga(a):
     else:
         print("Input harus ganjil, dan besar dari 3.")
 
+segitiga(3)
 segitiga(5)
