@@ -1,0 +1,24 @@
+CREATE DATABASE Arkademy; #buat database:
+
+CREATE TABLE Name (
+    id int,
+    name varchar(64),
+    id_work int,
+    id_salary int
+);  #Membuat table name
+
+CREATE TABLE Work (
+    id int,
+    name varchar(64),
+    id_salary int
+);  #Membuat table work
+
+CREATE TABLE Kategori (
+    id int,
+    salary double
+);  #Membuat table kategori
+
+Select name.Name as Name, name.Work as work, salary.Kategori 
+from ((Name
+INNER JOIN Work ON Name.id_work = Work.id)
+INNER JOIN Kategori ON Name.id_salary = Kategori.id); # Memanggil Nama dari tabel nama, dan nama dari pekerjaan, dan salary dari Kategori sesuai dengan nama dan id_work dan id_salary masing-masing.
