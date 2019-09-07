@@ -1,0 +1,21 @@
+def segitiga(a):
+    if a % 2 != 0 and a >= 3:
+        y = 0
+        x = 1
+        for k in range(a+1):
+            if k % 2 != 0 and k > 3:
+                y = a - x
+                x += 1
+
+        for i in range(y):
+            for j in range(a+2):
+                if i == 0 or i == j or a+2-j-1 == i:
+                    print("* ", end="")
+                else:
+                    print(end="  ")
+            print()
+
+    else:
+        print("Input harus ganjil, dan besar dari 3.")
+
+segitiga(5)
